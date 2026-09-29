@@ -1,0 +1,16 @@
+id: gs_ic_002
+category: icar_answerable
+query: "Any special action for wheat this week? No weather alert in the bulletin."
+plot:
+  crop: wheat
+  state: haryana
+  district: karnal
+  season: rabi
+tier1:
+  alert: no_alert
+  drainage: M
+  total_clauses: 1
+expected_verdict: DELIVER
+expected_actions:
+  - "Proceed with routine schedule"
+relevance: high

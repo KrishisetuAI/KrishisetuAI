@@ -1,0 +1,15 @@
+id: gs_ood_001
+category: ambiguous_ood
+query: "Rice field, heavy rain — what's the defensive spray schedule this week?"
+plot:
+  crop: rice
+  state: haryana
+  district: karnal
+  season: kharif
+tier1:
+  alert: heavy_rain_warning
+  drainage: M
+  total_clauses: 3
+expected_verdict: ESCALATE
+expected_actions: []
+relevance: medium

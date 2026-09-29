@@ -1,0 +1,4 @@
+id,path,source_type,crop,district,season,valid_from,valid_until,sha256
+haryana_rabi_irrigation_grand_growth,knowledge\canonical\haryana_rabi_irrigation_grand_growth.md,irrigation_rule,sugarcane,,rabi,2024-01-05,,073460969720fb1ee937c88ad00045ac5fc6213efde7e4a62952d141c0525795
+haryana_rabi_spacing_v1,knowledge\canonical\haryana_rabi_spacing_v1.md,spacing_norm,sugarcane,,rabi,2023-01-01,,807df5b8b0ea9cd9b8b01a5a019e723ee2d57bbe21f9d729dcf33a01fc01d776
+haryana_rabi_spacing_v2,knowledge\canonical\haryana_rabi_spacing_v2.md,spacing_norm,sugarcane,,rabi,2024-01-01,,5b57c09263b31c92b6f07ee472076e0b0817d8382f65cce96f511cc2292f302a

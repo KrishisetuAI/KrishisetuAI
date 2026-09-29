@@ -1,0 +1,27 @@
+id: gs_cross_001
+category: cross_crop_contamination
+query: "What should I do for top borer in my sugarcane?"
+plot:
+  crop: sugarcane
+  state: haryana
+  district: sohna
+  season: kharif
+stub_output: |
+  Release Trichogramma for top-borer control at the crop base (non-chemical).
+  Apply a rice blast preventive at heading stage.
+decision_actions:
+  - text: "Release Trichogramma for top-borer control at the crop base (non-chemical)."
+    source_id: "ICAR:IISR:SUGARCANE:TOP_BORER:RELEASE_TRICHOGRAMMA"
+    tier: tier1
+    clause: "RELEASE_TRICHOGRAMMA"
+  - text: "Apply a rice blast preventive at heading stage."
+    source_id: "kvk_karnal_rice_blast::2"
+    tier: tier3
+provenance:
+  - tier: tier1
+    source_id: "ICAR:IISR:SUGARCANE:TOP_BORER:RELEASE_TRICHOGRAMMA"
+resolution: exact
+expected_verdict: DELIVER
+expected_actions:
+  - "Release Trichogramma for top-borer control at the crop base (non-chemical)."
+relevance: high

@@ -1,0 +1,18 @@
+id: gs_ic_001
+category: icar_answerable
+query: "Sugarcane is under a heavy-rain warning this week — what actions should I take?"
+plot:
+  crop: sugarcane
+  state: haryana
+  district: sohna
+  season: grand_growth
+tier1:
+  alert: heavy_rain_warning
+  drainage: M
+  total_clauses: 3
+expected_verdict: DELIVER
+expected_actions:
+  - "Suspend irrigation"
+  - "Clear furrow outlets"
+  - "Delay foliar spray 72h"
+relevance: high

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Env / secrets — never commit real .env
+.env
+*.env
+
+# Local data (ChromaDB vector store, uploaded PDFs, NDVI tiles)
+/data/
+!data/.gitkeep
+
+# Model / cache artifacts
+.ollama/
+models/
+*.lock
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+
+# --- SIH 2026 / AI Meta Files ---
+.agents/
+.claude/
+.claude-flow/
+.kilo/
+plan.md
+PROMPT-LOG.md
+_wp.txt
+krishi.txt
+krishisethu_pmby_report.pdf
+
+# Additional Python / test artifacts
+.pytest_cache/
+.coverage

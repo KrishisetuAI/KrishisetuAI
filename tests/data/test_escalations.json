@@ -1,0 +1,676 @@
+[
+  {
+    "ticket_id": "KVK-21018BD58AD9",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "f7114f1a-392b-42f8-a560-cc3a6d309e83",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-08T17:06:00.693732Z",
+    "resolved_at": null,
+    "dedup_key": "21018bd58ad9e32a26679d651af9ce14f0bf0e389087d2d8ad42daa10a3cae57"
+  },
+  {
+    "ticket_id": "KVK-C1F7F4185853",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "bc6e556c-a6b2-423c-a85d-303982a74930",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-19T10:26:08.028720Z",
+    "resolved_at": null,
+    "dedup_key": "c1f7f418585375aed2c842cd6afc4cca5f27fb15fe91b0532d88773d9333cf6b"
+  },
+  {
+    "ticket_id": "KVK-19E5BE3BE171",
+    "query": "What is the best fertilizer for wheat in August?",
+    "context": {
+      "trace_id": "dccaa414-f68a-4d72-a443-245d8f99a12f",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0188,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0188,
+    "retrieved_chunks": [],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-19T10:26:08.094016Z",
+    "resolved_at": null,
+    "dedup_key": "19e5be3be171c17fe736c6b5b957175ecb7f74e083e42568e5240bf92b7b900d"
+  },
+  {
+    "ticket_id": "KVK-878D91884A55",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "dee8c03b-0f4a-43d8-a0ca-5a73ac2a833f",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-20T14:11:32.470353Z",
+    "resolved_at": null,
+    "dedup_key": "878d91884a55c1dccae8a950acb9a7db880af59cf5c64fc982e39be672f362b9"
+  },
+  {
+    "ticket_id": "KVK-9215B3255131",
+    "query": "What is the best fertilizer for wheat in August?",
+    "context": {
+      "trace_id": "51158b72-b0ba-4dae-a555-0ab6f5a089f5",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0188,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0188,
+    "retrieved_chunks": [],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-20T14:11:32.536059Z",
+    "resolved_at": null,
+    "dedup_key": "9215b325513195e2decc4b6605ce4868b60889027037a262ccd513ddf04d9474"
+  },
+  {
+    "ticket_id": "KVK-0D8D2C43F635",
+    "query": "Should I apply zinc on yellowing leaves?",
+    "context": {
+      "trace_id": "bc66d02b-77dc-4348-8eab-7dd6d7a34e0c",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0,
+    "retrieved_chunks": [
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0198,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": -0.0212,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": -0.0242,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": -0.0337,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": -0.0571,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-20T16:20:06.970952Z",
+    "resolved_at": null,
+    "dedup_key": "0d8d2c43f635ff07e52303cdeb43a24348eaccd7ec1717ca5496d585668691b0"
+  },
+  {
+    "ticket_id": "KVK-D96065F10C51",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "ab74f518-20d1-49cb-a97a-1984ad8ce245",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": {
+        "actions": [
+          {
+            "text": "Apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+            "input_class": "organophosphate insecticide",
+            "consult_expert": false,
+            "evidence": [
+              {
+                "source_id": "kvk_sohna_sugarcane_heavy_rain",
+                "tier": "tier3"
+              }
+            ]
+          }
+        ],
+        "confidence_breakdown": {
+          "R": 0.0,
+          "S_RAG": 0.8,
+          "P_vision": 0.0,
+          "has_image": false,
+          "cci": 0.24
+        }
+      }
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [
+      "confidence_gate: cci=0.0147 < 0.85"
+    ],
+    "status": "open",
+    "created_at": "2026-09-20T18:32:08.952294Z",
+    "resolved_at": null,
+    "dedup_key": "d96065f10c5192e809e46a7151216702a9e3b74efd8eeb8642f907fa318d55f6"
+  },
+  {
+    "ticket_id": "KVK-06F474F0058E",
+    "query": "What is the best fertilizer for wheat in August?",
+    "context": {
+      "trace_id": "f3422a4c-05e4-43b7-b2a1-43725a7969b8",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0188,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0188,
+    "retrieved_chunks": [],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-20T18:32:09.117287Z",
+    "resolved_at": null,
+    "dedup_key": "06f474f0058ecf2e956ebd1c1b5e1d2d8ea138f314f89c48a84c2bad7632bfe8"
+  },
+  {
+    "ticket_id": "KVK-47EB471D22C6",
+    "query": "Should I apply zinc on yellowing leaves?",
+    "context": {
+      "trace_id": "dd9f7dd2-dd2b-443c-86a0-9e3510d3e825",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0,
+    "retrieved_chunks": [
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0198,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": -0.0212,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": -0.0242,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": -0.0337,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": -0.0571,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-20T18:32:09.360081Z",
+    "resolved_at": null,
+    "dedup_key": "47eb471d22c6683de66958cbabab22a0e8b10488ae009858a135d6097df3c774"
+  },
+  {
+    "ticket_id": "KVK-E45DB9588680",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "21719878-7bec-47a8-abc2-0c74883310c7",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": {
+        "actions": [
+          {
+            "text": "Apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+            "input_class": "organophosphate insecticide",
+            "consult_expert": false,
+            "evidence": [
+              {
+                "source_id": "kvk_sohna_sugarcane_heavy_rain",
+                "tier": "tier3"
+              }
+            ]
+          }
+        ],
+        "confidence_breakdown": {
+          "R": 0.0,
+          "S_RAG": 0.8,
+          "P_vision": 0.0,
+          "has_image": false,
+          "cci": 0.24
+        }
+      }
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [
+      "confidence_gate: cci=0.0147 < 0.85"
+    ],
+    "status": "open",
+    "created_at": "2026-09-21T20:03:20.554925Z",
+    "resolved_at": null,
+    "dedup_key": "e45db95886807784ca202b28cd67c0c59edd2779ff6b9de201f2893f77dcaffc"
+  },
+  {
+    "ticket_id": "KVK-18156A5D63E3",
+    "query": "What is the best fertilizer for wheat in August?",
+    "context": {
+      "trace_id": "c691088c-b9d0-4296-8843-c398e999128a",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0188,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0188,
+    "retrieved_chunks": [],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-21T20:03:20.620712Z",
+    "resolved_at": null,
+    "dedup_key": "18156a5d63e320834d85f284db0396d2b2e319cf558b9a2ea61babe8e5d86f4d"
+  },
+  {
+    "ticket_id": "KVK-68D212E46F3B",
+    "query": "Should I apply zinc on yellowing leaves?",
+    "context": {
+      "trace_id": "2ee8dd14-3f6e-4a3b-98b1-5da1ea27a05f",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0,
+    "retrieved_chunks": [
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0198,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": -0.0212,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": -0.0242,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": -0.0337,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": -0.0571,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-21T20:03:20.708166Z",
+    "resolved_at": null,
+    "dedup_key": "68d212e46f3b1efbc27ebab30727610580b8fe9815419c8cf6c35bf17096a6c4"
+  },
+  {
+    "ticket_id": "KVK-88AE8D21F80C",
+    "query": "I want to apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+    "context": {
+      "trace_id": "4218fc06-df67-4724-b708-a34020112d63",
+      "intent": "chemical",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0147,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": {
+        "actions": [
+          {
+            "text": "Apply chlorpyrifos 2.5 ml/L to control shoot borer.",
+            "input_class": "organophosphate insecticide",
+            "consult_expert": false,
+            "evidence": [
+              {
+                "source_id": "kvk_sohna_sugarcane_heavy_rain",
+                "tier": "tier3"
+              }
+            ]
+          }
+        ],
+        "confidence_breakdown": {
+          "R": 0.0,
+          "S_RAG": 0.8,
+          "P_vision": 0.0,
+          "has_image": false,
+          "cci": 0.24
+        }
+      }
+    },
+    "cci": 0.0147,
+    "retrieved_chunks": [
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": 0.0392,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": 0.0384,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": 0.0232,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": 0.0149,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0078,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      }
+    ],
+    "validator_warnings": [
+      "confidence_gate: cci=0.0147 < 0.85"
+    ],
+    "status": "open",
+    "created_at": "2026-09-28T05:19:12.210871Z",
+    "resolved_at": null,
+    "dedup_key": "88ae8d21f80cffe095e6b8d685d79653e983eb0301bd90d37e69a29d52d6e35d"
+  },
+  {
+    "ticket_id": "KVK-A4C4721132EA",
+    "query": "What is the best fertilizer for wheat in August?",
+    "context": {
+      "trace_id": "75d7d575-962c-495c-a6dc-016ca44e8503",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0188,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0188,
+    "retrieved_chunks": [],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-28T05:19:12.368326Z",
+    "resolved_at": null,
+    "dedup_key": "a4c4721132ea47983c44e93799c2288f008680bc5d12b31cf0fe8076b7e96b07"
+  },
+  {
+    "ticket_id": "KVK-AF8D8A25B9AC",
+    "query": "Should I apply zinc on yellowing leaves?",
+    "context": {
+      "trace_id": "c11ddcda-4188-4e35-a57e-693c2ce0a406",
+      "intent": "ood",
+      "plot_id": "demo",
+      "demo": true,
+      "weather_alert": "heavy_rain_warning",
+      "soil_drainage": "M",
+      "cci": 0.0,
+      "gate_outcome": "fail_cci",
+      "resolution": "unresolved",
+      "advisory": null
+    },
+    "cci": 0.0,
+    "retrieved_chunks": [
+      {
+        "id": "research_sugarcane_water_productivity::0",
+        "score": -0.0198,
+        "text": "# Sugarcane water productivity under deficit irrigation\n## Study setting\nA two-season field study on loam soil at Sohna compared a deficit irrigation\nschedule against a fixed calendar. The objective was to hold yield while cutting\nthe applied water.\n## Finding\nScheduling on the depletion threshold rather than a fixed interval used less\nwater at a small yield cost in the water-limited season. Yield"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::0",
+        "score": -0.0212,
+        "text": "# Sugarcane ratoon management — gap filling and rotation\n## When to preserve the ratoon\nA ratoon with a stand gap of 20% or less should be kept. Manage trash as mulch,\nshave stubble to encourage uniform sprouting, and fill only the very poor gaps.\n## When to selectively gap-fill\nBetween a 20% and a 40% gap, fill only the missing stools and keep the field.\nMonitor tiller count and maintain soil moi"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_heavy_rain::0",
+        "score": -0.0242,
+        "text": "# Sugarcane heavy-rain advisory — Sohna block\n## When an IMD heavy-rain warning is active\nSuspend irrigation immediately and clear the furrow outlets so standing water can\ndrain before the soil waterlogs. On heavy-clay (drainage class C) fields, also\navoid field traffic while the soil is saturated.\n## Action priority\n| Priority | Action | Drainage note |\n|---|---|---|\n| 0 | Suspend irrigation | Al"
+      },
+      {
+        "id": "kvk_sohna_sugarcane_ratoon_gap::1",
+        "score": -0.0337,
+        "text": "## Practical rule of thumb\n| Gap in row | Decision |\n|---|---|\n| up to 20% | Preserve and manage |\n| 20% to 40% | Selective gap fill |\n| above 40% | Replant or rotate if uneconomic |"
+      },
+      {
+        "id": "icar_circ_sugarcane_red_rot::0",
+        "score": -0.0571,
+        "text": "# Sugarcane red-rot management — field hygiene and resistant varieties\n## Choose resistant planting material\nUse varieties rated resistant to red rot for the coming season and source seed\ncane only from disease-free nurseries. Avoid planting seed from a field with\nvisible symptoms.\n## Field hygiene\nCut the crop at ground level and remove infected stubble after harvest. Do not\nleave infected trash "
+      }
+    ],
+    "validator_warnings": [],
+    "status": "open",
+    "created_at": "2026-09-28T05:19:12.560394Z",
+    "resolved_at": null,
+    "dedup_key": "af8d8a25b9ac612c175bd9e153c9587f54fd42786b14a1a56e7beb4978b86ad6"
+  }
+]

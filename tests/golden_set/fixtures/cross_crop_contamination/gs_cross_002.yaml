@@ -1,0 +1,20 @@
+id: gs_cross_002
+category: cross_crop_contamination
+query: "What should I do for top borer in my sugarcane?"
+plot:
+  crop: sugarcane
+  state: haryana
+  district: sohna
+  season: kharif
+stub_output: "Apply a rice blast preventive at heading stage."
+decision_actions:
+  - text: "Apply a rice blast preventive at heading stage."
+    source_id: "kvk_karnal_rice_blast::2"
+    tier: tier3
+provenance:
+  - tier: tier1
+    source_id: "ICAR:IISR:SUGARCANE:TOP_BORER:RELEASE_TRICHOGRAMMA"
+resolution: exact
+expected_verdict: ESCALATE
+expected_actions: []
+relevance: high

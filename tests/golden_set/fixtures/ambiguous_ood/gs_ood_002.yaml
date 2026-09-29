@@ -1,0 +1,11 @@
+id: gs_ood_002
+category: ambiguous_ood
+query: "My zaid paddy is wilting in the heat — should I irrigate more this week?"
+plot:
+  crop: rice
+  state: haryana
+  district: karnal
+  season: zaid
+expected_verdict: ESCALATE
+expected_actions: []
+relevance: low
