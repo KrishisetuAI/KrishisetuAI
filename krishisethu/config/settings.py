@@ -115,6 +115,29 @@ class AppSettings(BaseSettings):
     port: int = 8000
 
 
+class BhashiniSettings(BaseSettings):
+    """Bhashini (Dhruva) inference credentials for the IVR voice channel."""
+
+    model_config = SettingsConfigDict(env_prefix="BHASHINI_", env_file=".env", extra="ignore")
+
+    inference_api_key: str = ""
+    inference_url: str = "https://dhruva-api.bhashini.gov.in/services/inference/pipeline"
+    # ULCA model-discovery credentials; not required for direct inference calls.
+    ulca_api_key: str = ""
+    user_id: str = ""
+    config_url: str = "https://meity-auth.ulcacontrib.org/ulca/apis/v0/model/getModelsPipeline"
+
+
+class TwilioSettings(BaseSettings):
+    """Twilio credentials for the IVR webhook channel."""
+
+    model_config = SettingsConfigDict(env_prefix="TWILIO_", env_file=".env", extra="ignore")
+
+    account_sid: str = ""
+    auth_token: str = ""
+    phone_number: str = ""
+
+
 class Settings(BaseSettings):
     """Aggregate configuration. Import this, never read dotenv/os.environ elsewhere."""
 
@@ -125,6 +148,8 @@ class Settings(BaseSettings):
     rag: RagSettings = RagSettings()
     gate: GateSettings = GateSettings()
     app: AppSettings = AppSettings()
+    bhashini: BhashiniSettings = BhashiniSettings()
+    twilio: TwilioSettings = TwilioSettings()
 
     def summary(self) -> dict:
         """Plain-dict view for /health and /api/v1/status."""
@@ -148,6 +173,10 @@ class Settings(BaseSettings):
                 "w_vision": self.gate.w_vision,
             },
             "app": {"host": self.app.host, "port": self.app.port},
+            "ivr": {
+                "bhashini_configured": bool(self.bhashini.inference_api_key),
+                "twilio_configured": bool(self.twilio.account_sid and self.twilio.auth_token),
+            },
         }
 
 

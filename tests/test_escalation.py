@@ -108,6 +108,17 @@ def test_read_tickets_admin_view(tmp_path):
     assert any(t.ticket_id == all_.ticket_id for t in svc.read_tickets())
 
 
+def test_corrupted_store_starts_fresh_not_crash(tmp_path):
+    """A corrupted ticket store is treated as empty; the service recovers on write."""
+    store = tmp_path / "tickets.json"
+    store.write_text("{not valid json", encoding="utf-8")
+    svc = EscalationService(store, now=FakeClock())
+    assert svc.read_tickets() == []
+    ticket = svc.raise_ticket(query="q", plot_id="p1", date_window="W36")
+    [only] = svc.read_tickets()
+    assert only.ticket_id == ticket.ticket_id
+
+
 def test_confidence_fail_produces_ticket_and_neutral_message(tmp_path):
     """Case 7 end-to-end: below-gate -> validator escalates -> ticket + neutral msg.
 

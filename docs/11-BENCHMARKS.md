@@ -28,6 +28,15 @@ after each god-tier prompt that produces a measurable number.
 | Escalation idempotency | n/a | 1 ticket on replay | sha256(query + plot + week) |
 | Safety-suite coverage | 0 | 97% | `confidence/safety/escalation/domain` |
 
+## IVR voice channel (Prompt 11)
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| Hermetic IVR tests | 11 pass | webhook routing, escalation speech lock, TTS failure, audio path safety, Bhashini client |
+| Escalation speech leak | 0 tokens | the escalation branch speaks a compile-time constant; a poisoned advisory never reaches TTS (regression-tested) |
+| Per-call audio isolation | 1 WAV per CallSid | kills the prototype's shared-file race under concurrent calls |
+| Full suite at integration | 249 passed, 1 skipped | +11 over PROMPT-10 |
+
 ## Tier-3 retrieval (Prompt 4)
 
 | Metric | Baseline | Now | Delta |
@@ -41,9 +50,13 @@ after each god-tier prompt that produces a measurable number.
 
 ## Regression totals
 
-- **Full suite: 223 tests pass** across `rules` (Tier 1), `knowledge` (Tier 2),
-  `rag` (Tier 3), `confidence`/`safety`/`escalation`, `ndvi` (Prompt 8), golden set, pipeline, hybrid router, and report.
-- New safety modules coverage: **97%**; composite index **100%**; NDVI engine **100%**.
+- **Full suite: 255 tests pass, 1 skipped** across `rules` (Tier 1), `knowledge` (Tier 2),
+  `rag` (Tier 3), `confidence`/`safety`/`escalation`, `ndvi` (Prompt 8), golden set, pipeline,
+  hybrid router, report, API, and the IVR webhook suite.
+- **Deterministic core coverage: 100%** — Tier-1 rules, CCI composite index, three-gate safety
+  validator, and KVK escalation (427/427 statements, pytest-cov, PROMPT-12). Safety 98%->100%
+  and escalation 96%->100% were closed in PROMPT-12; composite index and NDVI engine were
+  already 100%.
 
 Notes: numbers are measured on our own seed corpus and golden set; the real live
 corpus and the Tier-4 renderer (Prompt 6) will land in later prompts. The 3.8 s

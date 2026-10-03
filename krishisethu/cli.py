@@ -14,66 +14,14 @@ from pathlib import Path
 
 import click
 
-from krishisethu.config.settings import get_settings
-from krishisethu.escalation import EscalationService
-from krishisethu.knowledge.loader import CanonicalLoader
-from krishisethu.pipeline import Pipeline, PipelineDependencies, ReportGenerator, OfflineQueue
-from krishisethu.rag import ChromaLocal, OllamaEmbedder, Retriever, StubEmbedder
-from krishisethu.renderer import OllamaRenderer
-from krishisethu.renderer.router import HybridRenderer
-from krishisethu.safety import SafetyValidator
+from krishisethu.pipeline import Pipeline, ReportGenerator, OfflineQueue
+from krishisethu.pipeline.factory import build_default_deps
 
 logging.basicConfig(
     level=logging.WARNING,
     format="%(asctime)s [%(levelname)s] %(name)s %(message)s",
 )
 logger = logging.getLogger("krishisethu")
-
-REPO_ROOT = Path(__file__).resolve().parents[1]
-
-
-def _build_deps(verbose: bool = False) -> PipelineDependencies:
-    """Construct live dependencies (Ollama when reachable, else hermetic stubs).
-
-    Embeddings prefer the live Ollama ``bge-m3`` endpoint; when Ollama is
-    unreachable the CLI degrades to the deterministic StubEmbedder so the
-    demo still runs (Tier-1 EXACT answers short-circuit the confidence gate).
-    """
-    settings = get_settings()
-    #if verbose:
-        #logging.getLogger().setLevel(logging.DEBUG)
-
-    loader = CanonicalLoader(REPO_ROOT / "knowledge" / "canonical")
-
-    embedder: object
-    try:
-        embedder = OllamaEmbedder(base_url=settings.ollama.embed_base())
-        logger.debug("using live Ollama embedder (bge-m3)")
-    except Exception:  # Ollama down -> hermetic stub
-        embedder = StubEmbedder(seed=0)
-        logger.debug("Ollama unreachable; using deterministic StubEmbedder")
-
-    store = ChromaLocal(settings.chroma.persist_dir)
-    retriever = Retriever(embedder, store, top_k=settings.rag.top_k)
-
-    # Use hybrid cloud + fallback renderer
-    fallback_renderer = OllamaRenderer(
-        base_url=settings.ollama.embed_base(),
-        model=settings.ollama.llm_model,
-        fallback_model=settings.ollama.llm_fallback,
-        timeout_seconds=60.0,
-    )
-    renderer = HybridRenderer(fallback_renderer=fallback_renderer)
-    validator = SafetyValidator(threshold=settings.gate.confidence_gate)
-    escalation = EscalationService(REPO_ROOT / "data" / "escalations.json")
-
-    return PipelineDependencies(
-        loader=loader,
-        retriever=retriever,
-        renderer=renderer,
-        validator=validator,
-        escalation_service=escalation,
-    )
 
 
 def _print_result(state, verbose: bool, wall_ms: float) -> None:
@@ -115,7 +63,7 @@ def cli() -> None:
 @click.option("--verbose", "-v", is_flag=True, help="Print telemetry trace.")
 def advise(query: str, plot_id: str, demo: bool, verbose: bool) -> None:
     """Run the advisory pipeline for a single query."""
-    deps = _build_deps(verbose)
+    deps = build_default_deps()
     pipeline = Pipeline(deps)
     t0 = time.perf_counter()
     state = pipeline.run(query, plot_id=plot_id, demo=demo)
@@ -129,7 +77,7 @@ def advise(query: str, plot_id: str, demo: bool, verbose: bool) -> None:
               help="Demo plot id (used for escalation tickets).")
 def demo(verbose: bool, plot_id: str) -> None:
     """Play the Sohna demo story end-to-end (white-paper worked example)."""
-    deps = _build_deps(verbose)
+    deps = build_default_deps()
     pipeline = Pipeline(deps)
 
     click.echo("=" * 72)
@@ -218,7 +166,7 @@ def report_command(plot_id: str, output: str | None, offline: bool):
         demo=True,  # use demo context
     )
     # Run pipeline to get a real state
-    deps = _build_deps(verbose=False)
+    deps = build_default_deps()
     pipeline = Pipeline(deps)
     state = pipeline.run("Generate report for " + plot_id, plot_id=plot_id, demo=True)
 

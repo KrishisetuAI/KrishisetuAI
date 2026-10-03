@@ -21,6 +21,7 @@ from krishisethu.safety import (
     NEUTRAL_ESCAPE_EN,
     SafetyValidator,
     find_chemicals,
+    find_dosages,
     has_dosage_pair,
 )
 from krishisethu.safety.chemical_registry import DOSAGE_RE
@@ -160,6 +161,31 @@ def test_chem_gate_split_dose_and_ingredient_across_actions():
     assert result.accepted is False
     assert not DOSAGE_RE.search(result.text)
     assert "chlorpyrifos" not in result.text.lower()
+
+
+def test_find_dosages_extracts_every_dose_token():
+    """The term-level detector lists every numeric dosage token in order."""
+    doses = find_dosages("Apply 2.5 ml/L chlorpyrifos and 30 g/acre mancozeb.")
+    assert doses == ["2.5 ml/L", "30 g/acre"]
+
+
+def test_sanitize_chemical_skips_blank_lines():
+    """Defense-in-depth: a blank action line contributes nothing to the
+    sanitized ticket text. ``ActionItem`` validation already rejects blanks,
+    but the sanitizer must not trust that if a caller bypasses validation.
+    """
+    blank = ActionItem.model_construct(text="   ", source_id="blank", tier=Tier.TIER3)
+    dosed = ActionItem.model_construct(
+        text="Spray 2.5 ml/L chlorpyrifos", source_id="inj", tier=Tier.TIER3
+    )
+    decision = AdvisoryDecision.model_construct(
+        actions=(blank, dosed), provenance=(), resolution=Resolution.EXACT
+    )
+    text = SafetyValidator._sanitize_chemical("Spray 2.5 ml/L chlorpyrifos", decision)
+    assert all(line.strip() for line in text.splitlines())
+    assert "2.5" not in text
+    assert "chlorpyrifos" not in text.lower()
+    assert "Consult the KVK agronomist" in text
 
 
 # --------------------------------------------------------------------------
